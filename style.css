@@ -4,18 +4,52 @@
   box-sizing: border-box;
 }
 
-.home-page{
-    /* display: grid;
-    grid-template-columns: 600px 600px !important;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh; */
-   
-    
+.service-icon {
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+
+.service-icon:hover .icn {
+  background-color: blue;
+  color: white;
+}
+
+.service-icon {
+  transition: all 0.3s ease-in-out;
+}
+
+.service-icon:hover {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  transform: translateY(-5px);
+}
+
+.service-icon i {
+  font-size: 40px !important;
+}
+
+.icn {
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid rgb(55, 0, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+/* Promo page */
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .navbar-dark .navbar-toggler {
     display: none;
+  }
+
+  .vision-mision {
+    margin-top: 40px;
   }
 }
