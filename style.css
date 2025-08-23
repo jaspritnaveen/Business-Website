@@ -74,6 +74,23 @@
   color: #155bd5 !important;
 }
 
+h1 {
+  font-size: 58px !important;
+}
+
+sup {
+  font-size: 16px !important;
+  top: -2.0em !important;
+}
+
+sub {
+  font-size: 16px !important;
+}
+
+ul{
+  list-style-type: none;
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .navbar-dark .navbar-toggler {
     display: none;
