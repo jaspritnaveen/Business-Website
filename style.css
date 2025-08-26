@@ -31,7 +31,7 @@
   font-size: 40px !important;
 }
 
-.card-img-top:hover {
+.Portfolio-page .card-img-top:hover {
   opacity: 0.4;
 }
 
@@ -80,15 +80,35 @@ h1 {
 
 sup {
   font-size: 16px !important;
-  top: -2.0em !important;
+  top: -2em !important;
 }
 
 sub {
   font-size: 16px !important;
 }
 
-ul{
+ul {
   list-style-type: none;
+}
+
+.team-card {
+  width: 20rem;
+  height: 12rem;
+}
+
+.blur-image-section .card:hover {
+  cursor: pointer;
+}
+
+.blur-image-section .card:hover .card-body {
+  background-color: blue;
+  color: white;
+  bottom: 0;
+}
+
+.blur-image-section .card-body{
+  position: absolute;
+  bottom: -233px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
