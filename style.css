@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.navbar{
+  position: sticky !important;
+  
+}
 .service-icon,
 .portfolio {
   cursor: pointer;
@@ -102,14 +106,15 @@ ul {
 
 .blur-image-section .card:hover .card-body {
   background-color: blue;
-  color: white;
-  bottom: 0;
+  color: white !important;
+  transition: all 0.1 ease-in-out;
+  transform: matrix();
 }
 
-.blur-image-section .card-body{
-  position: absolute;
-  bottom: -233px;
+.blur-image-section .card:hover .card-body p {
+  color: white !important;
 }
+
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .navbar-dark .navbar-toggler {
