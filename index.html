@@ -20,11 +20,17 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-      <div class="container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top p-3">
+      <div class="container">
         <!-- Brand Logo -->
-        <a class="navbar-brand me-3" href="#">
-          <img src="Assets/business-logo.png" alt="Logo" style="height: 40px" />
+        <a class="navbar-brand me-1" href="#">
+          <img
+            src="Assets/business-logo.png"
+            class="me-lg-5 me-0"
+            alt="Logo"
+            style="height: 40px"
+          />
         </a>
 
         <!-- Navbar Toggler -->
@@ -42,10 +48,15 @@
 
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-2 gap-0 gap-lg-3">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Services</a>
+            </li>
+
             <li class="nav-item">
               <a class="nav-link active" href="#">Features</a>
             </li>
@@ -63,7 +74,8 @@
 
         <!-- Offcanvas Trigger -->
         <button
-          class="btn btn-primary ms-3"
+          id="hamburger-i"
+          class="btn btn-primary ms-3 border border-1 rounded-circle"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasRight"
@@ -82,7 +94,7 @@
       aria-labelledby="offcanvasRightLabel"
     >
       <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+        <h5 id="offcanvasRightLabel"></h5>
         <button
           type="button"
           class="btn-close text-reset"
@@ -91,12 +103,7 @@
         ></button>
       </div>
       <div class="offcanvas-body">
-        <img
-          src="Assets/offcanvas-logo.png"
-          alt=""
-          class="mb-3"
-          style="max-width: 100px"
-        />
+        <img src="Assets/offcanvas.png" alt="" class="mb-3" />
         <p>
           Lorem ipsum dolor sit amet, adipisicing elit. Sapiente fuga nisi rerum
           iusto intro.
@@ -104,55 +111,68 @@
 
         <ul class="navbar-nav mb-3">
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Home</a>
+            <a class="nav-link text-dark" href="#">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Features</a>
+            <a class="nav-link text-dark" href="#">Our Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Pricing</a>
+            <a class="nav-link text-dark" href="#">Latest News</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Contact Us</a>
           </li>
         </ul>
-
-        <h5>Follow Us On</h5>
+        <h5 class="mb-4">Follow Us On</h5>
         <div class="d-flex gap-3 fs-4">
-          <i class="bi bi-instagram"></i>
-          <i class="bi bi-github"></i>
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-whatsapp"></i>
+          <a href="#" class="icon-circle"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="icon-circle"><i class="bi bi-github"></i></a>
+          <a href="#" class="icon-circle"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="icon-circle"><i class="bi bi-whatsapp"></i></a>
         </div>
       </div>
     </div>
 
-    <section class="home-page vh-100 d-flex align-items-center bg-primary">
+    <!-- Home Page -->
+    <section class="home-page d-flex align-items-center bg-primary">
       <div class="container">
         <div class="row align-items-center justify-content-around">
           <!-- Left Column -->
           <div class="col-12 col-md-6 mb-4 mb-md-0">
             <div class="card-body">
-              <h1 class="card-title text-white">
-                Corporate & Business Site Template by Ayro UI.
+              <h1 class="card-title text-white pb-2">
+                Corporate & Business Site Template
+                <br class="d-none" />
+                by Ayro UI.
               </h1>
-              <p class="card-text text-white">
+              <p class="card-text text-white pb-2">
                 We are a digital agency that helps brands to achieve their
                 business outcomes. We see technology as a tool to create amazing
                 things.
               </p>
-              <a href="#" class="btn btn-primary me-3 bg-white text-dark"
-                >Go somewhere</a
-              >
-              <a
-                href="http://www.youtube.com"
-                class="text-decoration-none text-white"
-              >
-                <i class="bi bi-play-circle-fill me-2 text-light"></i>Watch
-                Intro
-              </a>
+
+              <div class="d-flex align-items-center flex-wrap gap-3">
+                <a
+                  href="#"
+                  class="btn btn-light text-primary border border-2 border-transparent fw-bold custom-btn p-2 me-5"
+                >
+                  GET STARTED
+                </a>
+
+                <a
+                  href="http://www.youtube.com"
+                  class="d-flex align-items-center text-decoration-none text-white"
+                >
+                  <i class="bi bi-play-circle-fill fs-2 me-2"></i>
+                  <span>Watch Intro</span>
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- Right Column -->
-          <div class="col-12 col-md-6 text-center">
+          <div class="col-12 col-md-6 text-center pb-5">
             <img
               src="Assets/homepage.png"
               alt="home-page"
@@ -164,7 +184,8 @@
       </div>
     </section>
 
-    <section class="vision-mision bg-light">
+    <!-- Vision Mision -->
+    <section class="vision-mision bg-light pt-5">
       <div class="container px-4">
         <div class="row gx-5 align-items-center">
           <!-- Left Side - Image -->
@@ -183,59 +204,63 @@
             <div class="p-3">
               <h3 class="fw-bold text-primary">OUR STORY</h3>
               <hr />
-              <h1 class="mb-4">
-                Our team comes with the experience and knowledge
-              </h1>
+              <h2 class="mb-4">
+                Our team comes with the <br />
+                experience and knowledge
+              </h2>
 
               <!-- Bootstrap Pills -->
-              <ul
-                class="nav nav-pills bg-light p-3 rounded"
-                id="myTab"
-                role="tablist"
-              >
-                <li class="nav-item me-2" role="presentation">
-                  <button
-                    class="nav-link active fw-bold"
-                    id="who-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#who"
-                    type="button"
-                    role="tab"
-                    aria-controls="who"
-                    aria-selected="true"
-                  >
-                    Who We Are
-                  </button>
-                </li>
-                <li class="nav-item me-2" role="presentation">
-                  <button
-                    class="nav-link fw-bold"
-                    id="vision-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#vision"
-                    type="button"
-                    role="tab"
-                    aria-controls="vision"
-                    aria-selected="false"
-                  >
-                    Our Vision
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link fw-bold"
-                    id="history-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#history"
-                    type="button"
-                    role="tab"
-                    aria-controls="history"
-                    aria-selected="false"
-                  >
-                    Our History
-                  </button>
-                </li>
-              </ul>
+
+              <nav class="vm-tab">
+                <ul
+                  class="nav nav-pills rounded gap-3"
+                  id="myTab"
+                  role="tablist"
+                >
+                  <li class="nav-item me-2" role="presentation">
+                    <button
+                      class="nav-link active fw-bold bg-white text-dark"
+                      id="who-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#who"
+                      type="button"
+                      role="tab"
+                      aria-controls="who"
+                      aria-selected="true"
+                    >
+                      Who We Are
+                    </button>
+                  </li>
+                  <li class="nav-item me-2" role="presentation">
+                    <button
+                      class="nav-link fw-bold bg-white text-dark"
+                      id="vision-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#vision"
+                      type="button"
+                      role="tab"
+                      aria-controls="vision"
+                      aria-selected="false"
+                    >
+                      Our Vision
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link fw-bold bg-white text-dark"
+                      id="history-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#history"
+                      type="button"
+                      role="tab"
+                      aria-controls="history"
+                      aria-selected="false"
+                    >
+                      Our History
+                    </button>
+                  </li>
+                </ul>
+              </nav>
 
               <!-- Tab Content -->
               <div class="tab-content mt-3" id="myTabContent">
@@ -307,6 +332,7 @@
       </div>
     </section>
 
+    <!-- Service Page -->
     <section class="service-page my-5">
       <div class="text-center">
         <button
@@ -315,23 +341,23 @@
         >
           Primary
         </button>
-        <h1>Our Best Services</h1>
-        <p class="text-secondary my-4">
+        <h2>Our Best Services</h2>
+        <p class="text-secondary p-4">
           There are many variations of passages of Lorem Ipsum available, but
-          <br />
+          <br class="d-none d-md-block" />
           the majority have suffered alteration in some form.
         </p>
       </div>
 
-      <div class="container py-5">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="container py-0">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gy-5">
           <!-- Card 1 -->
           <div class="col">
             <div class="p-3 service-icon">
               <div class="icn mb-2">
-                <i class="bi bi-airplane fs-3"></i>
+                <i class="bi bi-airplane fs-3 text-primary"></i>
               </div>
-              <h3 class="my-2">Refreshing Design</h3>
+              <h3 class="my-2 mt-3 mb-3">Refreshing Design</h3>
               <p>
                 Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
                 eirmod tempor ividunt labor dolore magna.
@@ -342,9 +368,9 @@
           <div class="col">
             <div class="p-3 service-icon">
               <div class="icn mb-2">
-                <i class="bi bi-laptop fs-3"></i>
+                <i class="bi bi-laptop fs-3 text-primary"></i>
               </div>
-              <h3 class="my-2">Responsive Layout</h3>
+              <h3 class="my-2 mt-3 mb-3">Responsive Layout</h3>
               <p>
                 Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
                 eirmod tempor ividunt labor dolore magna.
@@ -355,9 +381,9 @@
           <div class="col">
             <div class="p-3 service-icon">
               <div class="icn mb-2">
-                <i class="bi bi-lightning fs-3"></i>
+                <i class="bi bi-lightning fs-3 text-primary"></i>
               </div>
-              <h3 class="my-2">Fast Performance</h3>
+              <h3 class="my-2 mt-3 mb-3">Fast Performance</h3>
               <p>
                 Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
                 eirmod tempor ividunt labor dolore magna.
@@ -368,9 +394,9 @@
           <div class="col">
             <div class="p-3 service-icon">
               <div class="icn mb-2">
-                <i class="bi bi-lock fs-3"></i>
+                <i class="bi bi-lock fs-3 text-primary"></i>
               </div>
-              <h3 class="my-2">Secure Data</h3>
+              <h3 class="my-2 mt-3 mb-3">Secure Data</h3>
               <p>
                 Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
                 eirmod tempor ividunt labor dolore magna.
@@ -381,9 +407,9 @@
           <div class="col">
             <div class="p-3 service-icon">
               <div class="icn mb-2">
-                <i class="bi bi-gear fs-3"></i>
+                <i class="bi bi-gear fs-3 text-primary"></i>
               </div>
-              <h3 class="my-2">Easy Customization</h3>
+              <h3 class="my-2 mt-3 mb-3">Easy Customization</h3>
               <p>
                 Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
                 eirmod tempor ividunt labor dolore magna.
@@ -394,9 +420,9 @@
           <div class="col">
             <div class="p-3 service-icon">
               <div class="icn mb-2">
-                <i class="bi bi-people fs-3"></i>
+                <i class="bi bi-people fs-3 text-primary"></i>
               </div>
-              <h3 class="my-2">User Friendly</h3>
+              <h3 class="my-2 mt-3 mb-3">User Friendly</h3>
               <p>
                 Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
                 eirmod tempor ividunt labor dolore magna.
@@ -407,28 +433,30 @@
       </div>
     </section>
 
-    <section class="bg-light m-5 pt-5">
+    <!-- Video Page -->
+    <section class="video-page bg-light pt-5">
       <div class="text-center">
         <button type="button" class="btn btn-outline-primary rounded-pill px-5">
           Get in Touch
         </button>
-        <h1 class="my-3">Watch Our Promo Video</h1>
-        <p class="text-secondary my-4">
+        <h2 class="my-3">Watch Our Promo Video</h2>
+        <p class="text-secondary p-4">
           There are many variations of passages of Lorem Ipsum available, but
-          <br />
+          <br class="d-none d-md-block" />
           the majority have suffered alteration in some form.
         </p>
-
         <div class="position-relative d-inline-block">
           <!-- Make image responsive -->
           <img src="Assets/promo.png" class="img-fluid rounded p-2" alt="" />
 
           <!-- Center play button -->
           <div
-            class="position-absolute top-50 start-50 translate-middle"
+            class="position-absolute top-50 start-50 translate-middle video-icon"
             style="font-size: 3rem; color: #0d6efd; cursor: pointer"
           >
-            <i class="bi bi-play-circle-fill"></i>
+            <a href="https://youtu.be/NJbXptdalP0?si=UBJ-ZwoFmrmUUdxw">
+              <i class="bi bi-play-circle-fill"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -886,7 +914,7 @@
         <div class="row justify-content-center g-4">
           <!-- Card 1 -->
           <div class="col-md-4 d-flex justify-content-center">
-            <div class="card shadow-sm team-card">
+            <div class="card shadow-sm team-card h-100">
               <img
                 src="Assets/blur1.png"
                 class="card-img-top team-img"
@@ -932,15 +960,19 @@
       </div>
     </section>
 
-    <section class="msg-sec text-center bg-primary text-white p-5">
-      <div class="inner-content p-5 m-5">
-        <h2 class="p-4">We love to make perfect <br />solutions for your business</h2>
-        <p class="">
+    <section
+      class="msg-sec text-center bg-primary text-white d-flex justify-content-center align-items-center"
+    >
+      <div class="inner-content">
+        <h1 class="p-2">
+          We love to make perfect <br />solutions for your business
+        </h1>
+        <p class="p-2">
           Why I say old chap that is, spiffing off his nut cor blimey guvnords
           geeza<br />
           bloke knees up bobby, sloshed arse William cack Richard. Bloke fanny
-          around <br> chesed of bum bag old lost the pilot say there spiffing off his
-          nut.
+          around <br />
+          chesed of bum bag old lost the pilot say there spiffing off his nut.
         </p>
 
         <button type="button" class="btn btn-outline-light border-3 fw-100">
@@ -948,5 +980,22 @@
         </button>
       </div>
     </section>
+
+    <div class="Testimonials">
+      <div class="text-center my-5">
+        <button
+          type="button"
+          class="btn btn-outline-primary rounded-pill px-5 my-4"
+        >
+          Our Team
+        </button>
+        <h1>Our Creative Team</h1>
+        <p class="text-secondary my-3">
+          There are many variations of passages of Lorem Ipsum available, but
+          <br class="d-none d-md-block" />
+          the majority have suffered alteration in some form.
+        </p>
+      </div>
+    </div>
   </body>
 </html>

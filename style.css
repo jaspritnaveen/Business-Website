@@ -4,10 +4,107 @@
   box-sizing: border-box;
 }
 
-.navbar {
-  position: sticky !important;
+/* Navbar */
+
+#hamburger-i:hover {
+  background-color: white;
+  color: navy;
 }
-.service-icon,
+
+.icon-circle {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid #00000064;
+  border-radius: 50%;
+  color: #00000093;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-hover {
+  transition: all 0.3s ease;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.icon-circle:hover {
+  background-color: var(--bs-primary);
+  color: #fff;
+  border: none;
+  transform: scale(1.1);
+}
+
+.offcanvas .navbar-nav a:hover {
+  color: #155bd5 !important;
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+#navbarNav {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* Home Page */
+
+.home-page {
+  height: 690px;
+}
+
+.home-page .custom-btn {
+  padding: 10px 20px !important;
+  letter-spacing: 1px;
+}
+
+.home-page .custom-btn:hover {
+  background-color: var(--bs-primary);
+  color: white !important;
+}
+
+.intro-btn i {
+  font-size: 16px;
+}
+
+.home-page h1 {
+  font-size: 50px !important;
+}
+
+/* vision-mision */
+
+.vision-mision h2 {
+  font-weight: 700 !important;
+}
+
+#myTab {
+  border: none;
+  background-color: #efefef;
+}
+
+.vm-tab ul {
+  padding: 10px !important  ;
+}
+
+.vm-tab .nav-link.active {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+
+.vision-mision p {
+  font-size: 1em !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #6d6d6d !important;
+}
+
+/* Service Page  */
+
+.service-page h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
 .portfolio {
   cursor: pointer;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -19,15 +116,52 @@
   color: white;
 }
 
+.service-icon:hover .icn i {
+  color: white !important;
+}
+
 .service-icon {
   transition: all 0.3s ease-in-out;
 }
 
-.service-icon:hover,
+.service-icon {
+  border: 2px solid #dcdadabd;
+  border-radius: 10px;
+}
+
+.service-icon p {
+  text-align: justify;
+  color: #6d6d6d;
+  font-size: 18px !important;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.service-icon:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  cursor: pointer;
+  border-radius: 10px;
+  transform: translateY(-15px);
+}
+
 .portfolio:hover {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   transform: translateY(-5px);
+}
+
+.icn {
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #155bd5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: -100;
 }
 
 .service-icon i {
@@ -38,27 +172,15 @@
   opacity: 0.4;
 }
 
-.icn {
-  height: 80px;
-  width: 80px;
-  padding: 10px;
-  border-radius: 50%;
-  border: 3px solid rgb(55, 0, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
+/* Youtube Video page */
 
-/* Promo page */
-
-.position-absolute i {
+.video-page .position-absolute i {
   font-size: 48px;
   color: white;
   cursor: pointer;
 }
 
-.position-absolute {
+.video-page .position-absolute {
   background-color: #155bd5;
   padding: 10px;
   border-radius: 50%;
@@ -69,16 +191,16 @@
   align-items: center;
 }
 
-.position-absolute:hover {
+.video-page .position-absolute:hover {
   background-color: white;
 }
 
-.position-absolute:hover i {
+.video-page .position-absolute:hover i {
   color: #155bd5 !important;
 }
 
 h1 {
-  font-size: 58px !important;
+  font-size: 50px !important;
 }
 
 sup {
@@ -114,26 +236,65 @@ ul {
   color: white !important;
 }
 
-:root {
-  --primary: #155bd5;
-  --primary-dark: #1c3ab6;
+.msg-sec {
+  height: 400px !important;
+  word-spacing: 2px;
 }
 
-.msg-sec {
-  background: linear-gradient(
-    45deg,
-    var(--primary),
-    var(--primary-dark)
-  ) !important;
-  position: relative;
+.msg-sec h1 {
+  font-size: 36px !important;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .navbar-dark .navbar-toggler {
+  #hamburger-i {
     display: none;
+  }
+
+  .home-page {
+    height: max-content;
+  }
+
+  .home-page h1 {
+    font-size: 30px !important;
   }
 
   .vision-mision {
     margin-top: 40px;
+  }
+
+  .vm-tab .nav {
+    flex-direction: column !important;
+    align-items: stretch;
+  }
+
+  .vm-tab .nav .nav-item {
+    width: 100%;
+  }
+
+  .vm-tab .nav .nav-link {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Service page */
+
+  /* Comman h2 */
+
+  .service-page,
+  .video-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-icon p {
+    font-size: 15px !important;
+  }
+
+  .video-page .position-absolute i {
+    font-size: 20px;
+  }
+  .video-page .position-absolute {
+    height: 40px;
+    width: 40px;
+    font-size: 0rem !important;
   }
 }
