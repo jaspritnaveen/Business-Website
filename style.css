@@ -289,12 +289,5 @@ ul {
     font-size: 15px !important;
   }
 
-  .video-page .position-absolute i {
-    font-size: 20px;
-  }
-  .video-page .position-absolute {
-    height: 40px;
-    width: 40px;
-    font-size: 0rem !important;
-  }
+ 
 }
