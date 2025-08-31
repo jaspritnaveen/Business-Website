@@ -101,14 +101,15 @@
 
 /* Service Page  */
 
-.service-page h2 {
+.service-page h2,
+.video-page h2,
+.Portfolio-page h2,
+.pricing-page h2,
+.blur-image-section h2,
+.testimonials-page h2,
+.news-page h2 {
   font-size: 2.25em;
   font-weight: 700;
-}
-.portfolio {
-  cursor: pointer;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .service-icon:hover .icn {
@@ -137,39 +138,19 @@
   line-height: 1.5;
 }
 
+.pricing-page ul li {
+  color: #6d6d6d;
+  font-size: 18px !important;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
 .service-icon:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   cursor: pointer;
   border-radius: 10px;
   transform: translateY(-15px);
-}
-
-.portfolio:hover {
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-  transform: translateY(-5px);
-}
-
-.icn {
-  height: 80px;
-  width: 80px;
-  padding: 10px;
-  border-radius: 50%;
-  border: 1px solid #155bd5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  font-weight: -100;
-}
-
-.service-icon i {
-  font-size: 40px !important;
-}
-
-.Portfolio-page .card-img-top:hover {
-  opacity: 0.4;
 }
 
 /* Youtube Video page */
@@ -199,9 +180,44 @@
   color: #155bd5 !important;
 }
 
-h1 {
-  font-size: 50px !important;
+/* Portfolio page */
+
+.portfolio:hover {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  transform: translateY(-5px);
 }
+
+.icn {
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #155bd5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: -100;
+}
+
+.service-icon i {
+  font-size: 40px !important;
+}
+
+.Portfolio-page .card-img-top:hover {
+  opacity: 0.4;
+}
+
+.portfolio {
+  cursor: pointer;
+}
+
+.portfolio img {
+  border-radius: 10px;
+}
+
+/* pricing page */
 
 sup {
   font-size: 16px !important;
@@ -215,6 +231,17 @@ sub {
 ul {
   list-style-type: none;
 }
+
+.price-btn {
+  letter-spacing: 1px;
+  font-weight: 700 !important;
+}
+
+.price-alert i {
+  color: #155bd5;
+}
+
+/* blur image section */
 
 .team-card {
   width: 20rem;
@@ -236,6 +263,8 @@ ul {
   color: white !important;
 }
 
+/* Message part */
+
 .msg-sec {
   height: 400px !important;
   word-spacing: 2px;
@@ -244,6 +273,48 @@ ul {
 .msg-sec h1 {
   font-size: 36px !important;
 }
+
+/* Testimonials Page */
+
+/* Slider .... */
+.carousel-indicators {
+  bottom: -43px !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #b5caef !important;
+}
+
+.carousel-indicators .active {
+  background-color: #155bd5 !important;
+}
+
+.custom-card {
+  overflow: hidden;
+}
+
+/* Corner Design*/
+.decor-top-left {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 40px;
+  height: 40px;
+  background: #155bd5;
+  border-radius: 50%;
+}
+
+.decor-bottom-right {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  background: #f39c12;
+  border-radius: 4px;
+}
+
+/*  */
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #hamburger-i {
@@ -280,8 +351,13 @@ ul {
 
   /* Comman h2 */
 
-  .service-page,
-  .video-page h2 {
+  .service-page h2,
+  .video-page h2,
+  .Portfolio-page h2,
+  .pricing-page h2,
+  .blur-image-section h2,
+  .testimonials-page h2,
+  .news-page h2 {
     font-size: 1.5rem;
   }
 
@@ -289,5 +365,33 @@ ul {
     font-size: 15px !important;
   }
 
- 
+  .video-page .position-absolute i {
+    font-size: 20px;
+  }
+  .video-page .position-absolute {
+    height: 40px;
+    width: 40px;
+    font-size: 0rem !important;
+  }
+
+  /* Price page */
+  .pricing-page ul li {
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  /* Message section */
+
+  .msg-sec {
+    height: 490px !important;
+  }
+
+  .msg-sec h1 {
+    font-size: 25px !important;
+  }
+
+  .msg-sec p {
+    font-size: 16px !important;
+  }
 }
