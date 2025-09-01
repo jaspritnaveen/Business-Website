@@ -57,20 +57,19 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="#">Services</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Features</a>
+              <a class="nav-link active" href="#service">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Pricing</a>
+              <a class="nav-link active" href="#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Team</a>
+              <a class="nav-link active" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Contact</a>
+              <a class="nav-link active" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -336,7 +335,9 @@
     </section>
 
     <!-- Service Page -->
-    <section class="service-page my-5">
+    <div id="service"></div>
+
+    <section class="service-page my-5 Pt-5 w-100">
       <div class="text-center">
         <button
           type="button"
@@ -466,6 +467,7 @@
     </section>
 
     <!-- Portfolio-page -->
+    <div id="features"></div>
     <section class="Portfolio-page">
       <div class="text-center my-5">
         <button
@@ -761,6 +763,7 @@
     </section>
 
     <!-- Pricing page -->
+    <div id="pricing"></div>
     <section class="pricing-page mt-5 bg-light pb-5 pt-1">
       <div class="text-center my-5">
         <button
@@ -913,6 +916,7 @@
     </section>
 
     <!-- blur-image-section  -->
+    <div id="team"></div>
     <section class="blur-image-section">
       <div class="text-center my-5">
         <button
@@ -1285,7 +1289,9 @@
                     srcset=""
                     class="news-img small-image"
                   />
-                  <span class="text-white fw-bold">BY TIM NORTON</span>
+                  <span class="text-white fw-bold" style="font-size: 10px"
+                    >BY TIM NORTON</span
+                  >
                 </div>
                 <img
                   src="Assets/news1.png"
@@ -1317,7 +1323,7 @@
                     srcset=""
                     class="news-img small-image"
                   />
-                  <span class="text-white fw-bold">BY TIM NORTON</span>
+                  <span class="text-white fw-bold" style="font-size: 10px">BY TIM NORTON</span>
                 </div>
                 <img
                   src="Assets/news2.png"
@@ -1349,7 +1355,7 @@
                     srcset=""
                     class="news-img small-image"
                   />
-                  <span class="text-white fw-bold">BY TIM NORTON</span>
+                  <span class="text-white fw-bold" style="font-size: 10px">BY TIM NORTON</span>
                 </div>
                 <img
                   src="Assets/news3.png"
@@ -1448,7 +1454,7 @@
     </section>
 
     <!-- Contact Page -->
-
+    <div id="contact"></div>
     <section class="contact page py-5">
       <div class="container">
         <div class="row align-items-stretch g-4">
@@ -1570,7 +1576,7 @@
 
     <!-- Google map section -->
 
-    <section class="google-map-sec p-3 p-lg-5">
+    <section class="google-map-sec">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62238.49106036461!2d80.18462665373744!3d12.849367488314865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52678b6ec7b719%3A0xc0cf6f565e5669c7!2sSLA%20Institute!5e0!3m2!1sen!2sin!4v1756661995328!5m2!1sen!2sin"
         width="100%"
@@ -1583,7 +1589,7 @@
     </section>
     <!-- Footer page -->
 
-    <footer class="footer-area bg-white  py-5 m-3">
+    <footer class="footer-area bg-white py-5 m-3">
       <div class="container">
         <div class="row gy-4">
           <!-- Logo + About -->
@@ -1715,13 +1721,15 @@
     </footer>
 
     <!-- Top button -->
-    <a
-      href="#top"
-      id="backToTopBtn"
-      class="btn btn-primary position-fixed bottom-0 end-0 m-lg-5 m-2  d-none"
-    >
-      <i class="bi bi-chevron-up"></i>
-    </a>
+    <div>
+      <a
+        href="#top"
+        id="backToTopBtn"
+        class="btn btn-primary position-fixed bottom-0 end-0 m-lg-5 m-2 d-none"
+      >
+        <i class="bi bi-chevron-up"></i>
+      </a>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
