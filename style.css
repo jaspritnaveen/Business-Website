@@ -450,4 +450,10 @@ ul {
   }
 }
 
-
+@media (min-width: 794px) and (max-width: 1199.98px) {
+  .news-page .position-absolute {
+    left: 91px !important;
+    width: 121px;
+    top: 109px !important;
+  }
+}
