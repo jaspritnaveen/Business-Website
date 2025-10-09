@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Top anchor -->
+    <div id="top"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top p-3">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand me-1" href="#">
+          <img
+            src="Assets/business-logo.png"
+            class="me-lg-5 me-0"
+            alt="Logo"
+            style="height: 40px"
+          />
+        </a>
+
+        <!-- Navbar Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-2 gap-0 gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="#service">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Offcanvas Trigger -->
+        <button
+          id="hamburger-i"
+          class="btn btn-primary ms-3 border border-1 rounded-circle"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <i class="bi bi-list fs-5"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Offcanvas -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel"></h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <img src="Assets/offcanvas.png" alt="" class="mb-3" />
+        <p>
+          Lorem ipsum dolor sit amet, adipisicing elit. Sapiente fuga nisi rerum
+          iusto intro.
+        </p>
+
+        <ul class="navbar-nav mb-3">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Latest News</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <h5 class="mb-4">Follow Us On</h5>
+        <div class="d-flex gap-3 fs-4">
+          <a href="#" class="icon-circle"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="icon-circle"><i class="bi bi-github"></i></a>
+          <a href="#" class="icon-circle"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="icon-circle"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home Page -->
+    <section class="home-page d-flex align-items-center bg-primary">
+      <div class="container">
+        <div class="row align-items-center justify-content-around">
+          <!-- Left Column -->
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <div class="card-body">
+              <h1 class="card-title text-white pb-2">
+                Corporate & Business Site Template
+                <br class="d-none" />
+                by Ayro UI.
+              </h1>
+              <p class="card-text text-white pb-2">
+                We are a digital agency that helps brands to achieve their
+                business outcomes. We see technology as a tool to create amazing
+                things.
+              </p>
+
+              <div class="d-flex align-items-center flex-wrap gap-3">
+                <a
+                  href="#"
+                  class="btn btn-light text-primary border border-2 border-transparent fw-bold custom-btn p-2 me-5"
+                >
+                  GET STARTED
+                </a>
+
+                <a
+                  href="http://www.youtube.com"
+                  class="d-flex align-items-center text-decoration-none text-white"
+                >
+                  <i class="bi bi-play-circle-fill fs-2 me-2"></i>
+                  <span>Watch Intro</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-12 col-md-6 text-center pb-5">
+            <img
+              src="Assets/homepage.png"
+              alt="home-page"
+              class="img-fluid rounded"
+              style="max-height: 500px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision Mision -->
+    <section class="vision-mision bg-light pt-5">
+      <div class="container px-4">
+        <div class="row gx-5 align-items-center">
+          <!-- Left Side - Image -->
+          <div class="col-md-6">
+            <div class="p-3">
+              <img
+                src="Assets/second-page.png"
+                alt="Our Story"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
+
+          <!-- Right Side - Content -->
+          <div class="col-md-6">
+            <div class="p-3">
+              <h3 class="fw-bold text-primary">OUR STORY</h3>
+              <hr />
+              <h2 class="mb-4">
+                Our team comes with the <br />
+                experience and knowledge
+              </h2>
+
+              <!-- Bootstrap Pills -->
+
+              <nav class="vm-tab">
+                <ul
+                  class="nav nav-pills rounded gap-3"
+                  id="myTab"
+                  role="tablist"
+                >
+                  <li class="nav-item me-2" role="presentation">
+                    <button
+                      class="nav-link active fw-bold bg-white text-dark"
+                      id="who-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#who"
+                      type="button"
+                      role="tab"
+                      aria-controls="who"
+                      aria-selected="true"
+                    >
+                      Who We Are
+                    </button>
+                  </li>
+                  <li class="nav-item me-2" role="presentation">
+                    <button
+                      class="nav-link fw-bold bg-white text-dark"
+                      id="vision-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#vision"
+                      type="button"
+                      role="tab"
+                      aria-controls="vision"
+                      aria-selected="false"
+                    >
+                      Our Vision
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link fw-bold bg-white text-dark"
+                      id="history-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#history"
+                      type="button"
+                      role="tab"
+                      aria-controls="history"
+                      aria-selected="false"
+                    >
+                      Our History
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+
+              <!-- Tab Content -->
+              <div class="tab-content mt-3" id="myTabContent">
+                <!-- Who We Are -->
+                <div
+                  class="tab-pane fade show active"
+                  id="who"
+                  role="tabpanel"
+                  aria-labelledby="who-tab"
+                >
+                  <p class="text-justify">
+                    We are a passionate group of individuals committed to
+                    creating innovative solutions that bring value to our
+                    clients. Our team believes in collaboration, continuous
+                    learning, and building products that make a real difference
+                    in people’s lives.
+                  </p>
+                  <p>
+                    With years of combined expertise across industries, we focus
+                    on delivering excellence, adapting to challenges, and
+                    maintaining a customer-first approach in everything we do.
+                  </p>
+                </div>
+
+                <!-- Our Vision -->
+                <div
+                  class="tab-pane fade"
+                  id="vision"
+                  role="tabpanel"
+                  aria-labelledby="vision-tab"
+                >
+                  <p>
+                    Our vision is to empower businesses and individuals by
+                    providing them with tools, services, and experiences that
+                    drive growth and innovation. We aim to be a global leader
+                    recognized for our creativity and impact.
+                  </p>
+                  <p>
+                    By embracing technology, fostering a culture of integrity,
+                    and focusing on sustainability, we strive to shape a
+                    brighter future for our customers, employees, and
+                    communities worldwide.
+                  </p>
+                </div>
+
+                <!-- Our History -->
+                <div
+                  class="tab-pane fade"
+                  id="history"
+                  role="tabpanel"
+                  aria-labelledby="history-tab"
+                >
+                  <p>
+                    Our journey started with a small group of dreamers who
+                    believed in making a difference through innovation. Over the
+                    years, we have grown into a strong organization while
+                    holding on to the values that shaped our foundation.
+                  </p>
+                  <p>
+                    From humble beginnings to exciting milestones, our history
+                    is a testament to resilience, teamwork, and the trust we’ve
+                    built with our partners and clients around the globe.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Page -->
+    <div id="service"></div>
+
+    <section class="service-page my-5 Pt-5 w-100">
+      <div class="text-center">
+        <button
+          type="button"
+          class="btn btn-outline-primary rounded-pill px-5 my-4"
+        >
+          Primary
+        </button>
+        <h2>Our Best Services</h2>
+        <p class="text-secondary p-4">
+          There are many variations of passages of Lorem Ipsum available, but
+          <br class="d-none d-md-block" />
+          the majority have suffered alteration in some form.
+        </p>
+      </div>
+
+      <div class="container py-0">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gy-5">
+          <!-- Card 1 -->
+          <div class="col">
+            <div class="p-3 service-icon">
+              <div class="icn mb-2">
+                <i class="bi bi-airplane fs-3 text-primary"></i>
+              </div>
+              <h3 class="my-2 mt-3 mb-3">Refreshing Design</h3>
+              <p>
+                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
+                eirmod tempor ividunt labor dolore magna.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col">
+            <div class="p-3 service-icon">
+              <div class="icn mb-2">
+                <i class="bi bi-laptop fs-3 text-primary"></i>
+              </div>
+              <h3 class="my-2 mt-3 mb-3">Responsive Layout</h3>
+              <p>
+                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
+                eirmod tempor ividunt labor dolore magna.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col">
+            <div class="p-3 service-icon">
+              <div class="icn mb-2">
+                <i class="bi bi-lightning fs-3 text-primary"></i>
+              </div>
+              <h3 class="my-2 mt-3 mb-3">Fast Performance</h3>
+              <p>
+                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
+                eirmod tempor ividunt labor dolore magna.
+              </p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col">
+            <div class="p-3 service-icon">
+              <div class="icn mb-2">
+                <i class="bi bi-lock fs-3 text-primary"></i>
+              </div>
+              <h3 class="my-2 mt-3 mb-3">Secure Data</h3>
+              <p>
+                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
+                eirmod tempor ividunt labor dolore magna.
+              </p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="col">
+            <div class="p-3 service-icon">
+              <div class="icn mb-2">
+                <i class="bi bi-gear fs-3 text-primary"></i>
+              </div>
+              <h3 class="my-2 mt-3 mb-3">Easy Customization</h3>
+              <p>
+                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
+                eirmod tempor ividunt labor dolore magna.
+              </p>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col">
+            <div class="p-3 service-icon">
+              <div class="icn mb-2">
+                <i class="bi bi-people fs-3 text-primary"></i>
+              </div>
+              <h3 class="my-2 mt-3 mb-3">User Friendly</h3>
+              <p>
+                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
+                eirmod tempor ividunt labor dolore magna.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Page -->
+    <section class="video-page bg-light pt-5">
+      <div class="text-center">
+        <button type="button" class="btn btn-outline-primary rounded-pill px-5">
+          Get in Touch
+        </button>
+        <h2 class="my-3">Watch Our Promo Video</h2>
+        <p class="text-secondary p-4">
+          There are many variations of passages of Lorem Ipsum available, but
+          <br class="d-none d-md-block" />
+          the majority have suffered alteration in some form.
+        </p>
+        <div class="position-relative d-inline-block">
+          <!-- Make image responsive -->
+          <img src="Assets/promo.png" class="img-fluid rounded p-2" alt="" />
+
+          <!-- Center play button -->
+          <div
+            class="position-absolute top-50 start-50 translate-middle video-icon"
+            style="font-size: 3rem; color: #0d6efd; cursor: pointer"
+          >
+            <a href="https://youtu.be/NJbXptdalP0?si=UBJ-ZwoFmrmUUdxw">
+              <i class="bi bi-play-circle-fill"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio-page -->
+    <div id="features"></div>
+    <section class="Portfolio-page">
+      <div class="text-center my-5">
+        <button
+          type="button"
+          class="btn btn-outline-primary rounded-pill px-5 my-4"
+        >
+          Our Portfolio
+        </button>
+        <h2>Our Recent Works</h2>
+        <p class="text-secondary my-3 p-4">
+          There are many variations of passages of Lorem Ipsum available, but
+          <br class="d-none d-md-block" />
+          the majority have suffered alteration in some form.
+        </p>
+      </div>
+      <!-- Tabs -->
+      <ul
+        class="nav nav-pills mb-3 justify-content-center"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+            class="btn custom-btn"
+          >
+            ALL WORK
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-branding-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-branding"
+            type="button"
+            role="tab"
+            aria-controls="pills-branding"
+            aria-selected="false"
+          >
+            BRANDING
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-marketing-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-marketing"
+            type="button"
+            role="tab"
+            aria-controls="pills-marketing"
+            aria-selected="false"
+          >
+            MARKETING
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-planning-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-planning"
+            type="button"
+            role="tab"
+            aria-controls="pills-planning"
+            aria-selected="false"
+          >
+            PLANNING
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-research-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-research"
+            type="button"
+            role="tab"
+            aria-controls="pills-research"
+            aria-selected="false"
+          >
+            RESEARCH
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="pills-tabContent">
+        <!-- ALL WORK -->
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+        >
+          <div class="container mt-5">
+            <div class="row g-4">
+              <div class="col-12 col-sm-6 col-lg-4 portfolio rounded">
+                <img
+                  src="Assets/card1.png"
+                  class="card-img-top rounded-5 cursor-pointer"
+                  alt="..."
+                />
+                <h3>Graphics Design</h3>
+                <p>
+                  Short description for the ones who look for something new.
+                  Awesome!
+                </p>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4 portfolio rounded">
+                <img
+                  src="Assets/card2.png"
+                  class="card-img-top rounded-5"
+                  alt="..."
+                />
+                <h3>Web Development</h3>
+                <p>
+                  Short description for the ones who look for something new.
+                  Awesome!
+                </p>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4 portfolio rounded">
+                <img
+                  src="Assets/card3.png"
+                  class="card-img-top rounded-5"
+                  alt="..."
+                />
+                <h3>App Development</h3>
+                <p>
+                  Short description for the ones who look for something new.
+                  Awesome!
+                </p>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4 portfolio rounded">
+                <img
+                  src="Assets/card4.png"
+                  class="card-img-top rounded-5"
+                  alt="..."
+                />
+                <h3>Digital Marketing</h3>
+                <p>
+                  Short description for the ones who look for something new.
+                  Awesome!
+                </p>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4 portfolio rounded">
+                <img
+                  src="Assets/card5.png"
+                  class="card-img-top rounded-5"
+                  alt="..."
+                />
+                <h3>SEO Services</h3>
+                <p>
+                  Short description for the ones who look for something new.
+                  Awesome!
+                </p>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4 portfolio rounded">
+                <img
+                  src="Assets/card6.png"
+                  class="card-img-top rounded-5"
+                  alt="..."
+                />
+                <h3>Product Design</h3>
+                <p>
+                  Short description for the ones who look for something new.
+                  Awesome!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BRANDING -->
+        <div
+          class="tab-pane fade"
+          id="pills-branding"
+          role="tabpanel"
+          aria-labelledby="pills-branding-tab"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4 portfolio">
+                <img
+                  src="Assets/card1.png"
+                  class="card-img-top rounded-5"
+                  alt="..."
+                />
+                <h3>Branding Project</h3>
+                <p>Creative branding work for modern businesses.</p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 portfolio">
+                <img
+                  src="Assets/card2.png"
+                  class="card-img-top rounded-5"
+                  alt="..."
+                />
+                <h3>Logo & Identity</h3>
+                <p>Professional branding & identity design.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MARKETING -->
+        <div
+          class="tab-pane fade"
+          id="pills-marketing"
+          role="tabpanel"
+          aria-labelledby="pills-marketing-tab"
+        >
+          <div class="container mt-3">
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-4 portfolio">
+                <img
+                  src="Assets/card3.png"
+                  class="card-img-top rounded-5"
+                  alt="..."
+                />
+                <h3>Digital Marketing</h3>
+                <p>Grow your online presence with campaigns.</p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 portfolio">
+                <img
+                  src="Assets/card4.png"
+                  class="card-img-top rounded-5"
+                  alt="..."
+                />
+                <h3>SEO Optimization</h3>
+                <p>Boost search rankings and visibility.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PLANNING -->
+        <div
+          class="tab-pane fade"
+          id="pills-planning"
+          role="tabpanel"
+          aria-labelledby="pills-planning-tab"
+        >
+          <div class="container mt-3">
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-4 portfolio">
+                <img
+                  src="Assets/card5.png"
+                  class="card-img-top rounded-5"
+                  alt="..."
+                />
+                <h3>Project Roadmap</h3>
+                <p>Structured planning for smooth execution.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RESEARCH -->
+        <div
+          class="tab-pane fade"
+          id="pills-research"
+          role="tabpanel"
+          aria-labelledby="pills-research-tab"
+        >
+          <div class="container mt-3">
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-4 portfolio">
+                <img
+                  src="Assets/card6.png"
+                  class="card-img-top rounded-5"
+                  alt="..."
+                />
+                <h3>Market Analysis</h3>
+                <p>In-depth research to guide business decisions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing page -->
+    <div id="pricing"></div>
+    <section class="pricing-page mt-5 bg-light pb-5 pt-1">
+      <div class="text-center my-5">
+        <button
+          type="button"
+          class="btn btn-outline-primary rounded-pill px-5 my-4"
+        >
+          Pricing
+        </button>
+        <h2>Pricing & Plans</h2>
+        <p class="text-secondary my-3 p-3">
+          There are many variations of passages of Lorem Ipsum available, but
+          <br class="d-none d-md-block" />
+          the majority have suffered alteration in some form.
+        </p>
+      </div>
+
+      <div class="container mt-4">
+        <div class="row g-3">
+          <!-- Card-1 -->
+          <div class="col rounded m-3 shadow pt-5 pb-5">
+            <div class="text-center">
+              <button
+                type="button"
+                class="btn btn-outline-primary rounded-pill px-5 my-2"
+              >
+                Starter
+              </button>
+              <p class="text-secondary my-4">
+                Lorem Ipsum is simply dummy text of the
+                <br class="d-none d-md-inline" />
+                printing and industry.
+              </p>
+              <h1 class="my-2">
+                <sup class="text-secondary">$</sup>0<sub class="text-secondary"
+                  >/mo</sub
+                >
+              </h1>
+              <button
+                type="button"
+                class="btn btn-outline-primary my-4 price-btn"
+              >
+                START FREE TRAIL
+              </button>
+            </div>
+
+            <ul>
+              <li class="my-2 price-alert">
+                <i class="bi bi-check-circle me-2"></i> Cras justo odio.
+              </li>
+              <li class="my-2 price-alert">
+                <i class="bi bi-check-circle me-2"></i> Dapibus ac facilisis in.
+              </li>
+              <li class="my-2">
+                <i class="bi bi-check-circle me-2"></i> Morbi leo risus.
+              </li>
+              <li class="my-2">
+                <i class="bi bi-check-circle me-2"></i> Excepteur sint occaecat
+                velit.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card-2 -->
+          <div class="col rounded m-3 shadow-lg pt-5 pb-5">
+            <div class="text-center">
+              <button
+                type="button"
+                class="btn btn-primary rounded-pill px-5 my-2"
+              >
+                Exclusive
+              </button>
+              <p class="text-secondary my-4">
+                Lorem Ipsum is simply dummy text of the
+                <br class="d-none d-md-inline" />
+                printing and industry.
+              </p>
+              <h1 class="my-2">
+                <sup class="text-secondary">$</sup>99<sub class="text-secondary"
+                  >/mo</sub
+                >
+              </h1>
+              <button type="button" class="btn btn-primary my-4 price-btn">
+                START FREE TRAIL
+              </button>
+            </div>
+
+            <ul>
+              <li class="my-2 price-alert">
+                <i class="bi bi-check-circle me-2"></i> Cras justo odio.
+              </li>
+              <li class="my-2 price-alert">
+                <i class="bi bi-check-circle me-2"></i> Dapibus ac facilisis in.
+              </li>
+              <li class="my-2 price-alert">
+                <i class="bi bi-check-circle me-2"></i> Morbi leo risus.
+              </li>
+              <li class="my-2">
+                <i class="bi bi-check-circle me-2"></i> Excepteur sint occaecat
+                velit.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card-3 -->
+          <div class="col rounded m-3 shadow pt-5 pb-5">
+            <div class="text-center">
+              <button
+                type="button"
+                class="btn btn-outline-primary rounded-pill px-5 my-2"
+              >
+                Premium
+              </button>
+              <p class="text-secondary my-4">
+                Lorem Ipsum is simply dummy text of the
+                <br class="d-none d-md-inline" />
+                printing and industry.
+              </p>
+              <h1 class="my-2">
+                <sup class="text-secondary">$</sup>150<sub
+                  class="text-secondary"
+                  >/mo</sub
+                >
+              </h1>
+              <button
+                type="button"
+                class="btn btn-outline-primary my-4 price-btn"
+              >
+                START FREE TRAIL
+              </button>
+            </div>
+
+            <ul class="price-alert">
+              <li class="my-2">
+                <i class="bi bi-check-circle me-2"></i> Cras justo odio.
+              </li>
+              <li class="my-2">
+                <i class="bi bi-check-circle me-2"></i> Dapibus ac facilisis in.
+              </li>
+              <li class="my-2">
+                <i class="bi bi-check-circle me-2"></i> Morbi leo risus.
+              </li>
+              <li class="my-2">
+                <i class="bi bi-check-circle me-2"></i> Excepteur sint occaecat
+                velit.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blur-image-section  -->
+    <div id="team"></div>
+    <section class="blur-image-section">
+      <div class="text-center my-5">
+        <button
+          type="button"
+          class="btn btn-outline-primary rounded-pill px-5 my-4"
+        >
+          Our Team
+        </button>
+        <p class="text-secondary p-3">
+          There are many variations of passages of Lorem Ipsum available, but
+          <br class="d-none d-md-block" />
+          the majority have suffered alteration in some form.
+        </p>
+      </div>
+
+      <div class="container py-lg-5 py-3">
+        <div class="row justify-content-center g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card shadow-sm team-card h-100">
+              <img
+                src="Assets/blur1.png"
+                class="card-img-top team-img"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4>Jeffery Riley</h4>
+                <p class="text-primary" style="font-weight: 500">
+                  Art Director
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card shadow-sm team-card h-100">
+              <img
+                src="Assets/blur2.png"
+                class="card-img-top team-img"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4>Riley Beata</h4>
+                <p class="text-primary" style="font-weight: 500">
+                  Web Developer
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card shadow-sm team-card h-100">
+              <img
+                src="Assets/blur3.png"
+                class="card-img-top team-img"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4>Mark Alone</h4>
+                <p class="text-primary" style="font-weight: 500">UX Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Message section -->
+    <section
+      class="msg-sec text-center bg-primary text-white d-flex justify-content-center align-items-center py-5"
+    >
+      <div class="inner-content">
+        <h1 class="p-2">
+          We love to make perfect <br />solutions for your business
+        </h1>
+        <p class="p-2">
+          Why I say old chap that is, spiffing off his nut cor blimey guvnords
+          geeza<br class="d-none d-md-inline" />
+          bloke knees up bobby, sloshed arse William cack Richard. Bloke fanny
+          around <br />
+          chesed of bum bag old lost the pilot say there spiffing off his nut.
+        </p>
+
+        <button
+          type="button"
+          class="btn btn-outline-light border-3 fw-100 price-btn"
+        >
+          GET STARTED
+        </button>
+      </div>
+    </section>
+
+    <!-- Testimonials Page -->
+
+    <section class="testimonials-page p-3 p-lg-5 bg-light">
+      <div class="Testimonials">
+        <div class="text-center my-5">
+          <button
+            type="button"
+            class="btn btn-outline-primary rounded-pill px-5 my-4"
+          >
+            Our Team
+          </button>
+          <h2>Our Creative Team</h2>
+          <p class="text-secondary my-3">
+            There are many variations of passages of Lorem Ipsum available, but
+            <br class="d-none d-md-block" />
+            the majority have suffered alteration in some form.
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="testimonialCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-md-4 mb-3">
+                <div
+                  class="card p-4 shadow-sm rounded-4 position-relative custom-card"
+                >
+                  <div class="decor-top-left"></div>
+                  <p class="mb-4">
+                    On the other hand denoun with righteous and dislikes men who
+                    are beguiled demorae momentc blinded by desire that can
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="Assets/Testimonials1.png"
+                      class="rounded-circle me-3"
+                      width="50"
+                      height="50"
+                      alt="User 1"
+                    />
+                    <div>
+                      <h6 class="mb-0 fw-bold">David Warner</h6>
+                      <small class="text-muted">Web Developer</small>
+                    </div>
+                  </div>
+                  <div class="decor-bottom-right"></div>
+                  <div class="decor-bottom-left"></div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div
+                  class="card p-4 shadow-sm rounded-4 position-relative custom-card"
+                >
+                  <div class="decor-top-left"></div>
+                  <p class="mb-4">
+                    On the other hand denoun with righteous and dislikes men who
+                    are beguiled demorae momentc blinded by desire that can
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="Assets/Testimonials2.png"
+                      class="rounded-circle me-3"
+                      width="50"
+                      height="50"
+                      alt="User 2"
+                    />
+                    <div>
+                      <h6 class="mb-0 fw-bold">Jems Gilario</h6>
+                      <small class="text-muted">Graphics Designer</small>
+                    </div>
+                  </div>
+                  <div class="decor-bottom-right"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-4 mb-3">
+                <div
+                  class="card p-4 shadow-sm rounded-4 position-relative custom-card"
+                >
+                  <div class="decor-top-left"></div>
+                  <p class="mb-4">
+                    On the other hand denoun with righteous and disliks men who
+                    are beguiled demorae momentc blinded by desire that can
+                    Author
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="Assets/Testimonials3.png"
+                      class="rounded-circle me-3"
+                      width="50"
+                      height="50"
+                      alt="User 3"
+                    />
+                    <div>
+                      <h6 class="mb-0 fw-bold">Michael Smith</h6>
+                      <small class="text-muted">UI/UX Designer</small>
+                    </div>
+                  </div>
+                  <div class="decor-bottom-right"></div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div
+                  class="card p-4 shadow-sm rounded-4 position-relative custom-card"
+                >
+                  <div class="decor-top-left"></div>
+                  <p class="mb-4">
+                    On the other hand denoun with righteous and disliks men who
+                    are beguiled demorae momentc blinded by desire that can
+                    Author
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="Assets/Testimonials4.png"
+                      class="rounded-circle me-3"
+                      width="50"
+                      height="50"
+                      alt="User 4"
+                    />
+                    <div>
+                      <h6 class="mb-0 fw-bold">Emma Brown</h6>
+                      <small class="text-muted">Project Manager</small>
+                    </div>
+                  </div>
+                  <div class="decor-bottom-right"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-md-4 mb-3">
+                <div
+                  class="card p-4 shadow-sm rounded-4 position-relative custom-card"
+                >
+                  <div class="decor-top-left"></div>
+                  <p class="mb-4">
+                    On the other hand denoun with righteous and disliks men who
+                    are beguiled demorae momentc blinded by desire that can
+                    Author
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="Assets/Testimonials3.png"
+                      class="rounded-circle me-3"
+                      width="50"
+                      height="50"
+                      alt="User 3"
+                    />
+                    <div>
+                      <h6 class="mb-0 fw-bold">Michael Smith</h6>
+                      <small class="text-muted">UI/UX Designer</small>
+                    </div>
+                  </div>
+                  <div class="decor-bottom-right"></div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div
+                  class="card p-4 shadow-sm rounded-4 position-relative custom-card"
+                >
+                  <div class="decor-top-left"></div>
+                  <p class="mb-4">
+                    On the other hand denoun with righteous and disliks men who
+                    are beguiled demorae momentc blinded by desire that can
+                    Author
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="Assets/Testimonials4.png"
+                      class="rounded-circle me-3"
+                      width="50"
+                      height="50"
+                      alt="User 4"
+                    />
+                    <div>
+                      <h6 class="mb-0 fw-bold">Emma Brown</h6>
+                      <small class="text-muted">Project Manager</small>
+                    </div>
+                  </div>
+                  <div class="decor-bottom-right"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ✅ Indicators OUTSIDE carousel-inner -->
+        <div class="carousel-indicators mt-4">
+          <button
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- News page -->
+
+    <section class="news-page pt-5 pb-5">
+      <div class="text-center my-5">
+        <button
+          type="button"
+          class="btn btn-outline-primary rounded-pill px-5 my-4"
+        >
+          latest news
+        </button>
+        <h2>Latest News & Blog</h2>
+        <p class="text-secondary my-3 p-3">
+          There are many variations of passages of Lorem Ipsum available, but
+          <br class="d-none d-md-block" />
+          the majority have suffered alteration in some form.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Card 1 -->
+          <div class="col">
+            <div class="card news-1">
+              <div class="position-relative">
+                <div class="position-absolute top-50 end-0">
+                  <img
+                    src="Assets/small-news.png"
+                    alt=""
+                    srcset=""
+                    class="news-img small-image"
+                  />
+                  <span class="text-white fw-bold" style="font-size: 10px"
+                    >BY TIM NORTON</span
+                  >
+                </div>
+                <img
+                  src="Assets/news1.png"
+                  class="card-img-top big-image"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h3 class="card-title pb-3">
+                    The newest web framework that changed the world
+                  </h3>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col">
+            <div class="card news-1">
+              <div class="position-relative">
+                <div class="position-absolute top-50 end-0">
+                  <img
+                    src="Assets/small-news.png"
+                    alt=""
+                    srcset=""
+                    class="news-img small-image"
+                  />
+                  <span class="text-white fw-bold" style="font-size: 10px"
+                    >BY TIM NORTON</span
+                  >
+                </div>
+                <img
+                  src="Assets/news2.png"
+                  class="card-img-top big-image"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h3 class="card-title pb-3">
+                    The newest web framework that changed the world
+                  </h3>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col">
+            <div class="card news-1">
+              <div class="position-relative">
+                <div class="position-absolute top-50 end-0">
+                  <img
+                    src="Assets/small-news.png"
+                    alt=""
+                    srcset=""
+                    class="news-img small-image"
+                  />
+                  <span class="text-white fw-bold" style="font-size: 10px"
+                    >BY TIM NORTON</span
+                  >
+                </div>
+                <img
+                  src="Assets/news3.png"
+                  class="card-img-top big-image"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h3 class="card-title pb-3">
+                    The newest web framework that changed the world
+                  </h3>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Page -->
+    <section class="client-page bg-light py-5">
+      <div class="text-center my-5">
+        <button
+          type="button"
+          class="btn btn-outline-primary rounded-pill px-5 my-4"
+        >
+          Meet our Clients
+        </button>
+        <h2>Our Awesome Clients</h2>
+        <p class="text-secondary my-3 px-4">
+          There are many variations of passages of Lorem Ipsum available, but
+          <br class="d-none d-md-block" />
+          the majority have suffered alteration in some form.
+        </p>
+      </div>
+
+      <div class="container vh-50">
+        <!-- First Row -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-center align-items-center"
+        >
+          <div>
+            <img
+              src="Assets/client1.png"
+              alt="Client 1"
+              class="px-4 mx-md-5 mb-4 mb-md-0 shadow p-5 rounded-3 client-box"
+            />
+          </div>
+          <div>
+            <img
+              src="Assets/client2.png"
+              alt="Client 2"
+              class="px-4 mx-md-5 mb-4 mb-md-0 shadow p-5 rounded-3 client-box"
+            />
+          </div>
+          <div>
+            <img
+              src="Assets/client3.png"
+              alt="Client 3"
+              class="px-4 mx-md-5 mb-4 mb-md-0 shadow p-5 rounded-3 client-box"
+            />
+          </div>
+        </div>
+
+        <!-- Second Row -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5"
+        >
+          <div>
+            <img
+              src="Assets/client4.png"
+              alt="Client 4"
+              class="px-4 py-5 mx-md-5 mb-4 mb-md-0 shadow p-5 rounded-3 client-box"
+            />
+          </div>
+          <div>
+            <img
+              src="Assets/client5.png"
+              alt="Client 5"
+              class="px-4 py-5 mx-md-5 mb-4 mb-md-0 shadow p-5 rounded-3 client-box"
+            />
+          </div>
+          <div>
+            <img
+              src="Assets/client6.png"
+              alt="Client 6"
+              class="px-4 py-5 mx-md-5 mb-4 mb-md-0 shadow p-5 rounded-3 client-box"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Page -->
+    <div id="contact"></div>
+    <section class="contact page py-5">
+      <div class="container">
+        <div class="row align-items-stretch g-4">
+          <!-- LEFT SIDE (Contact Info) -->
+          <div class="col-lg-4">
+            <div class="d-flex flex-column gap-3 h-100">
+              <!-- Contact -->
+              <div
+                class="contact-item d-flex align-items-start p-3 shadow-sm rounded-3 bg-white mb-3"
+              >
+                <div class="contact-icon me-3 text-primary fs-3">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="contact-content">
+                  <h5 class="fw-bold mb-1">Contact</h5>
+                  <p class="mb-0">0984537278623</p>
+                  <p class="mb-0">yourmail@gmail.com</p>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div
+                class="contact-item d-flex align-items-start p-3 shadow-sm rounded-3 bg-white mb-3"
+              >
+                <div class="contact-icon me-3 text-primary fs-3">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div class="contact-content">
+                  <h5 class="fw-bold mb-1">Address</h5>
+                  <p class="mb-0">175 5th Ave, New York, NY 10010</p>
+                  <p class="mb-0">United States</p>
+                </div>
+              </div>
+
+              <!-- Schedule -->
+              <div
+                class="contact-item d-flex align-items-start p-3 shadow-sm rounded-3 bg-white mb-3"
+              >
+                <div class="contact-icon me-3 text-primary fs-3">
+                  <i class="bi bi-alarm-fill"></i>
+                </div>
+                <div class="contact-content">
+                  <h5 class="fw-bold mb-1">Schedule</h5>
+                  <p class="mb-0">24 Hours / 7 Days Open</p>
+                  <p class="mb-0">Office time: 10 AM - 5:30 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE (Form) -->
+          <div class="col-lg-7">
+            <div class="card shadow-sm p-4 h-100">
+              <div class="text-center mb-4">
+                <h6 class="text-primary">Get in Touch</h6>
+                <h2 class="fw-bold">Ready to Get Started</h2>
+                <p class="text-muted">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium
+                </p>
+              </div>
+
+              <form action="#" class="contact-form">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control rounded-pill"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control rounded-pill"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control rounded-pill"
+                      placeholder="Phone"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control rounded-pill"
+                      placeholder="Subject"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      class="form-control rounded-4"
+                      placeholder="Type Message"
+                      rows="7"
+                    ></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button
+                      type="submit"
+                      class="btn btn-primary rounded-pill px-4 py-2"
+                    >
+                      SEND MESSAGE
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google map section -->
+
+    <section class="google-map-sec">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62238.49106036461!2d80.18462665373744!3d12.849367488314865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52678b6ec7b719%3A0xc0cf6f565e5669c7!2sSLA%20Institute!5e0!3m2!1sen!2sin!4v1756661995328!5m2!1sen!2sin"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <!-- Footer page -->
+
+    <footer class="footer-area bg-white py-5 m-3">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Logo + About -->
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <div class="logo mb-3">
+                <a href="#">
+                  <img
+                    src="assets/footer.png"
+                    alt="Business Logo"
+                    class="img-fluid"
+                    style="max-width: 150px"
+                  />
+                </a>
+              </div>
+              <p class="text-muted mb-3">
+                Making the world a better place through constructing elegant
+                hierarchies.
+              </p>
+              <p class="copyright-text small text-muted py-3">
+                © 2025 Kumar UI. Designed and Developed by
+                <a
+                  href="javascript:void(0)"
+                  class="text-decoration-none fw-medium"
+                  >Naveenkumar R</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Solutions -->
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-widget">
+              <h4 class="fw-bold mb-4">Solutions</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="#"
+                    class="text-muted text-decoration-none d-block mb-2"
+                    >Marketing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-muted text-decoration-none d-block mb-2"
+                    >Analytics</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-muted text-decoration-none d-block mb-2"
+                    >Commerce</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-muted text-decoration-none"
+                    >Insights</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Support -->
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-widget">
+              <h4 class="fw-bold mb-3 mb-4">Support</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="#"
+                    class="text-muted text-decoration-none d-block mb-2"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-muted text-decoration-none d-block mb-2"
+                    >Documentation</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-muted text-decoration-none d-block mb-2"
+                    >Guides</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-muted text-decoration-none"
+                    >API Status</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Subscribe -->
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h4 class="fw-bold mb-4">Subscribe</h4>
+              <p class="text-muted mb-3">
+                Subscribe to our newsletter for the latest updates
+              </p>
+
+              <div class="position-relative">
+                <div class="position-absolute top-50 end-0 translate-middle">
+                  <div class="input-group-text bg-primary text-white gx-5">
+                    <span>
+                      <i class="bi bi-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <input
+                  type="email"
+                  class="form-control py-3 pe-5"
+                  placeholder="Email address"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Top button -->
+    <div>
+      <a
+        href="#top"
+        id="backToTopBtn"
+        class="btn btn-primary position-fixed bottom-0 end-0 m-lg-5 m-2 d-none"
+      >
+        <i class="bi bi-chevron-up"></i>
+      </a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
